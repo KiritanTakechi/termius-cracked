@@ -2,9 +2,9 @@
 
 ## 破解方法
 
-安装npm 安装asar
+安装bun 安装asar
 ```shell
-npm install -g asar
+bun i -g @electron/asar
 ```
 ### for Windows
 
@@ -25,10 +25,10 @@ rm app-update.yml  # 防止自动更新
 
 搜索`await this.api.bulkAccount`
 
-`const e=await this.api.bulkAccount();` -> `var e=await this.api.bulkAccount();`
+`const e=await this.api.bulkAccount();` -> `let e=await this.api.bulkAccount();`
 
 ```js
-var e=await this.api.bulkAccount();
+let e=await this.api.bulkAccount();
 e.account.pro_mode=true;
 e.account.need_to_update_subscription=false;
 e.account.current_period={
