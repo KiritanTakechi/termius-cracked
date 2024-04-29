@@ -21,7 +21,7 @@ mv app.asar app.asar.bak  # 留个备份，或者直接rm
 rm app-update.yml  # 防止自动更新
 
 ```
-2. 修改app/js/background-process.js
+2. 修改app/background-process/assets/main-6f7f971a.js
 
 搜索`await this.api.bulkAccount`
 
