@@ -16,7 +16,7 @@ bun i -g @electron/asar
 1. 解包app.asar
 ```shell
 cd /Applications/Termius.app/Contents/Resources/
-asar extract app.asar ./app  # 修改完不需要重新打包
+asar extract app.asar ./app.asar  # 修改完不需要重新打包
 mv app.asar app.asar.bak  # 留个备份，或者直接rm
 rm app-update.yml  # 防止自动更新
 
@@ -72,7 +72,7 @@ e.access_objects=[{
         "end": "2099-01-01T00:00:00"
     },
     "title": "Pro"
-}]
-return .......
+}];
+return (await this.setUserProfile(e), e);
 ```
 3. 启动Termius，登录账号，重启Termius
